@@ -45,6 +45,7 @@ app.post('/api/notes', (req, res) => {
     const newNote = createNewNote(req.body, notes);
     res.json(newNote);
 });
+
 function deleteNote(id, notesArray) {
     for (let i = 0; i < notesArray.length; i++) {
         let note = notesArray[i];
